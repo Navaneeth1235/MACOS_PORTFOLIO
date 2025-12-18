@@ -3,6 +3,8 @@ import { useRef } from 'react';
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 
+gsap.registerPlugin(useGSAP);
+
 const FONT_WEIGHTS = {
     subtitle : { min : 100, max: 400, default: 100},
     title : {min :400, max: 900, default: 400}
@@ -12,7 +14,7 @@ const renderText = (text, className, baseWeight = 400 ) =>{
     return [...text].map((char, i)=>(
         <span
             key= {i}
-            className={className}
+            className={`${className} inline-block`}
             style = {{fontVariationSettings: `'wght' ${baseWeight}`}}
         >
             {char === " " ? "\u00A0" : char}
@@ -30,7 +32,7 @@ const setupTextHover = (container, type) => {
     const animateLetter = (letter, weight, duration = 0.25) => {
         return gsap.to(letter,{
             duration,
-            ease: 'power2.out',
+            ease: 'power1.out',
             fontVariationSettings: `'wght' ${weight}`,
             }
         );
@@ -43,7 +45,7 @@ const setupTextHover = (container, type) => {
         letters.forEach((letter) => {
             const {left: l, width: w} = letter.getBoundingClientRect();
             const distance = Math.abs(mouseX - (l - left + w / 2));
-            const intensity = Math.exp(- (distance ** 2) / 2000);
+            const intensity = Math.exp(- (distance ** 2) / 20000);
 
             animateLetter(letter, min + ( max - min) * intensity);
         });
