@@ -102,29 +102,87 @@ const navLinks = [
   const techStack = [
     {
       category: "Frontend",
-      items: ["React.js", "Next.js", "TypeScript"],
-    },
-    {
-      category: "Mobile",
-      items: ["React Native", "Expo"],
-    },
-    {
-      category: "Styling",
-      items: ["Tailwind CSS", "Sass", "CSS"],
+      items: [
+        "React.js",
+        "Next.js",
+        "Angular",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "Sass"
+      ],
     },
     {
       category: "Backend",
-      items: ["Node.js", "Express", "NestJS", "Hono"],
+      items: [
+        "Node.js",
+        "Express.js",
+        "NestJS",
+        "FastAPI",
+        "Flask",
+        "Django",
+      ],
     },
     {
-      category: "Database",
-      items: ["MongoDB", "PostgreSQL"],
+      category: "Databases",
+      items: [
+        "PostgreSQL",
+        "MySQL",
+        "Oracle",
+        "Firebase",
+        "SQLite"
+      ],
     },
     {
-      category: "Dev Tools",
-      items: ["Git", "GitHub", "Docker"],
+      category: "Programming Languages",
+      items: [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Java",
+        "C",
+        "C++",
+        "SQL",
+        "PHP"
+      ],
     },
-  ];
+    {
+      category: "AI / Machine Learning",
+      items: [
+        "PyTorch",
+        "TensorFlow",
+        "Hugging Face Transformers",
+        "OpenAI API",
+        "Google Gemini",
+        "YOLO (v4, v5)",
+        "CLIP",
+        "Stable Diffusion",
+        "NumPy",
+        "Gradio",
+        "Streamlit"
+      ],
+    },
+    {
+      category: "DevOps & Cloud",
+      items: [
+        "Docker",
+        "AWS - S3, EC2",
+        "Vercel",
+        "Netlify"
+      ],
+    },
+    {
+      category: "Tools & Platforms",
+      items: [
+        "Git",
+        "VS Code",
+        "Cursor AI",
+        "Google Colab",
+        "Jupyter Notebook",
+        "Firebase Studio"
+      ],
+    },
+  ];  
   
   const socials = [
     {
