@@ -25,15 +25,19 @@ const Home = () => {
   return (
     <section id ='home'>
       <ul>
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <li
-            key={project.id}
-            className={clsx("group folder", project.windowPosition)}
-            onClick={() => handleOpenProjectFinder(project)}
-            >
-              <img src="/images/folder.png" alt={project.name} />
-              <p>{project.name}</p>
-          </li>
+          key={project.id}
+          className="group folder absolute"
+          style={{
+            top: `${index * 120 + 10}px`,
+            left: `0px`,
+          }}
+          onClick={() => handleOpenProjectFinder(project)}
+        >
+          <img src="/images/folder.png" alt={project.name} />
+          <p>{project.name}</p>
+        </li>
         ))}
       </ul>
     </section>

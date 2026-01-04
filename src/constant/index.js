@@ -106,10 +106,8 @@ const navLinks = [
         "React.js",
         "Next.js",
         "Angular",
-        "HTML",
-        "CSS",
         "Tailwind CSS",
-        "Sass"
+        "Sass",
       ],
     },
     {
@@ -117,10 +115,8 @@ const navLinks = [
       items: [
         "Node.js",
         "Express.js",
-        "NestJS",
         "FastAPI",
         "Flask",
-        "Django",
       ],
     },
     {
@@ -130,7 +126,6 @@ const navLinks = [
         "MySQL",
         "Oracle",
         "Firebase",
-        "SQLite"
       ],
     },
     {
@@ -138,35 +133,29 @@ const navLinks = [
       items: [
         "JavaScript",
         "TypeScript",
-        "Python",
-        "Java",
-        "C",
+        "Python",,
         "C++",
-        "SQL",
-        "PHP"
+        "PHP",
       ],
     },
     {
-      category: "AI / Machine Learning",
+      category: "AI / ML",
       items: [
         "PyTorch",
         "TensorFlow",
-        "Hugging Face Transformers",
-        "OpenAI API",
-        "Google Gemini",
-        "YOLO (v4, v5)",
-        "CLIP",
-        "Stable Diffusion",
+        "Transformers",
+        "OpenAI",
+        "Gemini",
+        "YOLO",
         "NumPy",
-        "Gradio",
-        "Streamlit"
+        "Pandas",
       ],
     },
     {
       category: "DevOps & Cloud",
       items: [
         "Docker",
-        "AWS - S3, EC2",
+        "S3, EC2",
         "Vercel",
         "Netlify"
       ],
@@ -266,208 +255,154 @@ const navLinks = [
     gallery,
   };
   
-  const WORK_LOCATION = {
-    id: 1,
-    type: "work",
-    name: "Work",
-    icon: "/icons/work.svg",
-    kind: "folder",
-    children: [
-      // ▶ Project 1
-      {
-        id: 5,
-        name: "Nike Ecommerce Website Application",
-        icon: "/images/folder.png",
-        kind: "folder",
-        position: "top-10 left-5", // icon position inside Finder
-        windowPosition: "top-[5vh] left-5", // optional: Finder window position
-        children: [
-          {
-            id: 1,
-            name: "Nike Project.txt",
-            icon: "/images/txt.png",
-            kind: "file",
-            fileType: "txt",
-            position: "top-5 left-10",
-            description: [
-              "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-              "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-              "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-              "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
-            ],
-          },
-          {
-            id: 2,
-            name: "nike.com",
-            icon: "/images/safari.png",
-            kind: "file",
-            fileType: "url",
-            href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
-            position: "top-10 right-20",
-          },
-          {
-            id: 4,
-            name: "nike.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-52 right-80",
-            imageUrl: "/images/project-1.png",
-          },
-          {
-            id: 5,
-            name: "Design.fig",
-            icon: "/images/plain.png",
-            kind: "file",
-            fileType: "fig",
-            href: "https://google.com",
-            position: "top-60 right-20",
-          },
-        ],
-      },
-  
-      // ▶ Project 2
-      {
-        id: 6,
-        name: "AI Resume Analyzer",
-        icon: "/images/folder.png",
-        kind: "folder",
-        position: "top-52 right-80",
-        windowPosition: "top-[20vh] left-7",
-        children: [
-          {
-            id: 1,
-            name: "AI Resume Analyzer Project.txt",
-            icon: "/images/txt.png",
-            kind: "file",
-            fileType: "txt",
-            position: "top-5 right-10",
-            description: [
-              "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-              "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-              "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-              "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
-            ],
-          },
-          {
-            id: 2,
-            name: "ai-resume-analyzer.com",
-            icon: "/images/safari.png",
-            kind: "file",
-            fileType: "url",
-            href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
-            position: "top-20 left-20",
-          },
-          {
-            id: 4,
-            name: "ai-resume-analyzer.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-52 left-80",
-            imageUrl: "/images/project-2.png",
-          },
-          {
-            id: 5,
-            name: "Design.fig",
-            icon: "/images/plain.png",
-            kind: "file",
-            fileType: "fig",
-            href: "https://google.com",
-            position: "top-60 left-5",
-          },
-        ],
-      },
-  
-      // ▶ Project 3
-      {
-        id: 7,
-        name: "Food Delivery App",
-        icon: "/images/folder.png",
-        kind: "folder",
-        position: "top-10 left-80",
-        windowPosition: "top-[33vh] left-7",
-        children: [
-          {
-            id: 1,
-            name: "Food Delivery App Project.txt",
-            icon: "/images/txt.png",
-            kind: "file",
-            fileType: "txt",
-            position: "top-5 left-10",
-            description: [
-              "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-              "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-              "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-              "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
-            ],
-          },
-          {
-            id: 2,
-            name: "food-delivery-app.com",
-            icon: "/images/safari.png",
-            kind: "file",
-            fileType: "url",
-            href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
-            position: "top-10 right-20",
-          },
-          {
-            id: 4,
-            name: "food-delivery-app.png",
-            icon: "/images/image.png",
-            kind: "file",
-            fileType: "img",
-            position: "top-52 right-80",
-            imageUrl: "/images/project-3.png",
-          },
-          {
-            id: 5,
-            name: "Design.fig",
-            icon: "/images/plain.png",
-            kind: "file",
-            fileType: "fig",
-            href: "https://google.com",
-            position: "top-60 right-20",
-          },
-        ],
-      },
-    ],
-  };
-  
-  const ABOUT_LOCATION = {
-    id: 2,
-    type: "about",
-    name: "About me",
-    icon: "/icons/info.svg",
-    kind: "folder",
-    children: [
-      {
-        id: 1,
-        name: "me.png",
-        icon: "/images/image.png",
-        kind: "file",
-        fileType: "img",
-        position: "top-10 left-5",
-        imageUrl: "/images/Navaneeth.png",
-      },
-      {
-        id: 4,
-        name: "about-me.txt",
-        icon: "/images/txt.png",
-        kind: "file",
-        fileType: "txt",
-        position: "top-60 left-5",
-        subtitle: "Meet the Developer Behind the Code:",
-        image: "",
-        description: [
-          "I’m an Artificial Intelligence Engineer with a strong foundation in ML, Generative AI, and Full-Stack AI systems, currently pursuing my B.E. in AI & DS with a 8.9 CGPA. I enjoy building AI products that move beyond theory and deliver real-world impact.",
-          "I’ve worked as an AI Intern at Intel, Datatobiz, and Wish Grantars, where I developed and deployed production-grade solutions including LLM-powered chatbots, automated question generation pipelines, and multimodal AI applications. My work has focused on optimizing models for performance, and cost-efficiency—often in cloud-deployed environments.",
-           "Technically, I’m comfortable working across the stack with Python, SQL, C/C++, Flask, FastAPI, TensorFlow, PyTorch, Hugging Face, Docker, and cloud platforms like GCP and AWS. ",
-          "I’m driven by curiosity, experimentation, and building AI systems that are practical, reliable, and user-centric. I’m currently seeking opportunities where I can contribute to impactful AI products while continuing to grow as an engineer.",
-        ],
-      },
-    ],
-  };
+const WORK_LOCATION = {
+  id: 1,
+  type: "work",
+  name: "Work",
+  icon: "/icons/work.svg",
+  kind: "folder",
+  children: [
+    // ▶ Project 1: macOS Portfolio
+    {
+      id: 5,
+      name: "MacOS Portfolio Website",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-10 left-5",
+      windowPosition: "top-[10vh] left-8",
+      children: [
+        {
+          id: 101,
+          name: "macOS Portfolio.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-6 left-8",
+          description: [
+            "1. A macOS-inspired interactive portfolio built entirely for the web.",
+            "2. Simulates native macOS features such as Finder, Dock, draggable windows, and window controls.",
+            "3. Built using React, GSAP, Zustand, and Tailwind CSS with a strong focus on UI/UX realism.",
+            "4. Demonstrates advanced frontend architecture, state management, and animation handling."
+          ]
+        }
+      ]
+    },
+
+    // ▶ Project 2: AI Image Recognition Chatbot
+    {
+      id: 7,
+      name: "AI Image Recognition Chatbot",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-36 left-5",
+      windowPosition: "top-[18vh] left-8",
+      children: [
+        {
+          id: 102,
+          name: "AI Image Recognition Chatbot.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-6 left-8",
+          description: [
+            "1. An AI-powered chatbot capable of understanding and responding to image-based queries.",
+            "2. Uses computer vision techniques combined with NLP to analyze image content.",
+            "3. Designed to showcase multimodal AI interactions using Python and deep learning models.",
+            "4. Highlights practical use cases of AI in visual understanding and conversational systems."
+          ]
+        }
+      ]
+    },
+
+    // ▶ Project 3: OSINT For Everyone
+    {
+      id: 9,
+      name: "OSINT For Everyday Uses",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-62 left-5",
+      windowPosition: "top-[26vh] left-8",
+      children: [
+        {
+          id: 103,
+          name: "OSINT For Everyone.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-6 left-8",
+          description: [
+            "1. A beginner-friendly project focused on Open-Source Intelligence (OSINT).",
+            "2. Explores how publicly available data can be gathered, analyzed, and interpreted responsibly.",
+            "3. Designed as an educational resource covering real-world OSINT techniques and tools.",
+            "4. Emphasizes ethical awareness and cybersecurity fundamentals."
+          ]
+        }
+      ]
+    },
+
+    // ▶ Project 4: Social Media Sentiment Analysis
+    {
+      id: 11,
+      name: "Social-Media Sentiment Analysis",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-88 left-5",
+      windowPosition: "top-[34vh] left-8",
+      children: [
+        {
+          id: 104,
+          name: "Social Media Sentiment Analysis.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-6 left-8",
+          description: [
+            "1. A data-driven project that analyzes sentiment from social media content.",
+            "2. Uses NLP techniques to classify opinions as positive, negative, or neutral.",
+            "3. Built to demonstrate real-world applications of machine learning and text analytics.",
+            "4. Highlights skills in Python, data preprocessing, and sentiment modeling."
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+const ABOUT_LOCATION = {
+  id: 2,
+  type: "about",
+  name: "About me",
+  icon: "/icons/info.svg",
+  kind: "folder",
+  children: [
+    {
+      id: 1,
+      name: "me.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-10 left-5",
+      imageUrl: "/images/Navaneeth.png",
+    },
+    {
+      id: 4,
+      name: "about-me.txt",
+      icon: "/images/txt.png",
+      kind: "file",
+      fileType: "txt",
+      position: "top-60 left-5",
+      subtitle: "Meet the Developer Behind the Code:",
+      image: "",
+      description: [
+        "I’m an Artificial Intelligence Engineer with a strong foundation in ML, Generative AI, and Full-Stack AI systems, currently pursuing my B.E. in AI & DS with a 8.9 CGPA. I enjoy building AI products that move beyond theory and deliver real-world impact.",
+        "I’ve worked as an AI Intern at Intel, Datatobiz, and Wish Grantars, where I developed and deployed production-grade solutions including LLM-powered chatbots, automated question generation pipelines, and multimodal AI applications. My work has focused on optimizing models for performance, and cost-efficiency—often in cloud-deployed environments.",
+         "Technically, I’m comfortable working across the stack with Python, SQL, C/C++, Flask, FastAPI, TensorFlow, PyTorch, Hugging Face, Docker, and cloud platforms like GCP and AWS. ",
+        "I’m driven by curiosity, experimentation, and building AI systems that are practical, reliable, and user-centric. I’m currently seeking opportunities where I can contribute to impactful AI products while continuing to grow as an engineer.",
+      ],
+    },
+  ],
+};
+
   
   const RESUME_LOCATION = {
     id: 3,
@@ -503,15 +438,6 @@ const navLinks = [
         fileType: "img",
         position: "top-10 left-10",
         imageUrl: "/images/trash-1.png",
-      },
-      {
-        id: 2,
-        name: "trash2.png",
-        icon: "/images/image.png",
-        kind: "file",
-        fileType: "img",
-        position: "top-40 left-80",
-        imageUrl: "/images/trash-2.png",
       },
     ],
   };

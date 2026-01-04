@@ -14,9 +14,9 @@ const Terminal = () => {
         <div className='techstack'>
             <p>
                 <span className='font-bold'>
-                    @Navaneeth %
+                    @Navaneeth % 
                 </span>
-                show tech  stack
+                 Show Tech  Stack
             </p>
 
             <div className='label'>
@@ -26,7 +26,7 @@ const Terminal = () => {
             <ul className='content'>
                 {techStack.map(({ category, items}) => (
                     <li key = {category} className='flex items-center'>
-                        <Check className='check' size = {20}/>
+                        <Check className='check' size = {12}/>
                         <h3>{category}</h3>
                         <ul>
                             {items.map((item, i) => (
@@ -40,7 +40,7 @@ const Terminal = () => {
 
             </ul>
 
-            <div className='footenote'>
+            <div className='footnote'>
                 <p>
                     <Check size={20}/> 8 out of 8 stacks loaded successfully (100%)
                 </p>
