@@ -49,12 +49,6 @@ const navLinks = [
       canOpen: true,
     },
     {
-      id: "photos",
-      name: "Gallery", // was "Photos"
-      icon: "photos.png",
-      canOpen: true,
-    },
-    {
       id: "contact",
       name: "Contact", // or "Get in touch"
       icon: "contact.png",
@@ -101,6 +95,37 @@ const navLinks = [
   
   const techStack = [
     {
+      category: "AI / ML",
+      items: [
+        "PyTorch",
+        "TensorFlow",
+        "Transformers",
+        "OpenAI",
+        "Gemini",
+        "YOLO",
+        "NumPy",
+        "Pandas",
+      ],
+    },
+    {
+      category: "Databases",
+      items: [
+        "PostgreSQL",
+        "MySQL",
+        "Oracle",
+        "Firebase",
+      ],
+    },
+    {
+      category: "DevOps & Cloud",
+      items: [
+        "Docker",
+        "S3, EC2",
+        "Vercel",
+        "Netlify"
+      ],
+    },
+    {
       category: "Frontend",
       items: [
         "React.js",
@@ -120,15 +145,6 @@ const navLinks = [
       ],
     },
     {
-      category: "Databases",
-      items: [
-        "PostgreSQL",
-        "MySQL",
-        "Oracle",
-        "Firebase",
-      ],
-    },
-    {
       category: "Programming Languages",
       items: [
         "JavaScript",
@@ -136,28 +152,6 @@ const navLinks = [
         "Python",,
         "C++",
         "PHP",
-      ],
-    },
-    {
-      category: "AI / ML",
-      items: [
-        "PyTorch",
-        "TensorFlow",
-        "Transformers",
-        "OpenAI",
-        "Gemini",
-        "YOLO",
-        "NumPy",
-        "Pandas",
-      ],
-    },
-    {
-      category: "DevOps & Cloud",
-      items: [
-        "Docker",
-        "S3, EC2",
-        "Vercel",
-        "Netlify"
       ],
     },
     {

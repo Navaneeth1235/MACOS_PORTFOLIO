@@ -13,7 +13,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 const Resume = () => {
-  const [numPages, setNumPages] = useState(null);
+  const [numPages, setNumPages] = useState(0);
 
   const onLoadSuccess = ({ numPages }) => {
     setNumPages(numPages);
@@ -21,12 +21,13 @@ const Resume = () => {
 
   return (
     <>
+      {/* Window Header */}
       <div id="window-header">
         <WindowControls target="resume" />
         <h2>Resume.pdf</h2>
 
         <a
-          href="files/resume.pdf"
+          href="/files/resume.pdf"
           download
           className="cursor-pointer"
           title="Download resume"
@@ -35,20 +36,23 @@ const Resume = () => {
         </a>
       </div>
 
-      <Document
-        file="/files/resume.pdf"
-        onLoadSuccess={onLoadSuccess}
-        className="space-y-6 p-4"
-      >
-        {Array.from(new Array(numPages), (_, index) => (
-          <Page
-            key={index}
-            pageNumber={index + 1}
-            renderTextLayer
-            renderAnnotationLayer
-          />
-        ))}
-      </Document>
+      {/* Scrollable Content */}
+      <div className="resume-scroll">
+        <Document
+          file="/files/resume.pdf"
+          onLoadSuccess={onLoadSuccess}
+        >
+          {Array.from({ length: numPages }, (_, index) => (
+            <Page
+              key={index}
+              pageNumber={index + 1}
+              renderTextLayer
+              renderAnnotationLayer
+              scale={1.15}
+            />
+          ))}
+        </Document>
+      </div>
     </>
   );
 };
